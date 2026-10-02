@@ -1,28 +1,19 @@
-# SQLマスターへの道
+# SQLマスターへの道 v2 - SQL版Duolingo
 
-GitHub Pagesでそのまま公開できる、依存関係なしの静的SQL学習サイトです。
+## 変更点
+- 問題入力欄は空欄から開始
+- 10ユニット、各5ステップ、合計50学習ステップ
+- 各章は「解説 → 選択問題 → 穴埋め → 結果予測 → 自力記述」
+- 前章クリアで次章を解放
+- XP、ハート、進捗、バッジ、ブラウザ保存
+- スマートフォン対応
 
-## ファイル
-- index.html
-- style.css
-- script.js
-- questions.js
-
-## GitHub Pages公開手順
-1. GitHubへサインインし、新しいリポジトリを作成します。名前例: `sql-master-road`
-2. リポジトリをPublicで作成します。
-3. `Add file` → `Upload files` を選び、このフォルダー内の4ファイルをアップロードしてCommitします。
-4. リポジトリの `Settings` → 左側 `Pages` を開きます。
-5. `Build and deployment` の `Source` を `Deploy from a branch` にします。
-6. Branchを `main`、folderを `/(root)` にして `Save` します。
-7. Pages画面に表示される公開URLを開きます。
-
-通常のURL形式は `https://GitHubユーザー名.github.io/sql-master-road/` です。
-
-## 更新方法
-ファイルを修正して同じリポジトリへアップロード・Commitすると、公開サイトも更新されます。
+## GitHub Pagesへの差し替え
+1. ZIPを展開する
+2. 既存リポジトリのファイルを `index.html`、`style.css`、`app.js`、`lessons.js`、`README.md` に差し替える
+3. GitHubでCommit changesを押す
+4. GitHub Pagesの公開元が main / (root) のままなら自動更新される
 
 ## 注意
-- 履歴とXPは閲覧者ごとのブラウザlocalStorageに保存されます。ログインや端末間同期はありません。
-- GitHub Pages上のサイトは公開サイトです。個人情報・機密情報・実患者情報を入れないでください。
-- 現版はSQLを実際にDBへ実行せず、正規化した文字列で正誤判定します。
+- SQLは実DBへ実行せず、学習用の文字列判定を行います。
+- 学習進捗は各ブラウザのlocalStorageに保存されます。
